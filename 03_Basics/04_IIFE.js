@@ -30,3 +30,4 @@ inside curved brackets which is shown below
         console.log("DB CONNECTED 3 "+salary);
 })(200000)
 
+
