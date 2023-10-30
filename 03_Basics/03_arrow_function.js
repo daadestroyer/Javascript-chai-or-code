@@ -35,7 +35,7 @@ const addNum = (num1,num2)=>{
 const addThree = (num1,num2) => (num1+num2) // this is implicit return, here no need to type return
 
 
-const returnObj = () => ({username:"shubham"})
+const returnObj = () => ({username:"shubham"}) // to return object we need to return wrap object in curved brackets
 addNum(1,2)
 addThree(1,2,3)
 
