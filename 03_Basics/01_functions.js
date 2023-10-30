@@ -45,4 +45,10 @@ function getHeroes(anyHeroes){
   return anyHeroes[3];
 }
 
-console.log(getHeroes(heroes));
+// console.log(getHeroes(heroes));
+
+
+
+
+
+
