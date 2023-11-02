@@ -17,17 +17,26 @@
       <h2>Lorem 4</h2>
       <h2>Lorem 5</h2>
       <h3>Lorem 5</h3>
-
       <p>Lorem ipsum, dolor sit amet</p>
+      <input type="password" name="">
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
     </div>
 
     <script>
-      document.getElementById("title").style.backgroundColor = "green";
+      document.getElementById("title").style.backgroundColor = "orange";
       document.getElementById("title").style.padding = "20px";
       document.getElementById("title").style.borderRadius = "10px";
       document.getElementById("title").style.color = "blue";
       console.log(document.getElementById("title").textContent);
-      document.querySelector('h2')
+      document.querySelector('h2') // selecting the tags
+      document.querySelector('.heading') // selecting the class
+      document.querySelector('#title') // selecting the id
+      document.querySelector('input[type="password"]')
+      document.querySelector('li').style.backgroundColor = 'orange' // to make li bg color as green
 
     </script>
   </body>
