@@ -13,12 +13,15 @@
   </head>
   <body class="bg-black">
     <div>
-      <h1 id="title" class="heading">DOM Learning on Chai aur Code <span style="display: none;"> text text</span></h1>
+      <h1 id="title" class="heading">
+        DOM Learning on Chai aur Code
+        <span style="display: none"> text text</span>
+      </h1>
       <h2>Lorem 4</h2>
       <h2>Lorem 5</h2>
       <h3>Lorem 5</h3>
       <p>Lorem ipsum, dolor sit amet</p>
-      <input type="password" name="">
+      <input type="password" name="" />
       <ul>
         <li>one</li>
         <li>two</li>
@@ -32,17 +35,19 @@
       document.getElementById("title").style.borderRadius = "10px";
       document.getElementById("title").style.color = "blue";
       console.log(document.getElementById("title").textContent);
-      document.querySelector('h2') // selecting the tags
-      document.querySelector('.heading') // selecting the class
-      document.querySelector('#title') // selecting the id
-      document.querySelector('input[type="password"]')
-      document.querySelector('li').style.backgroundColor = 'orange' // to make li bg color as green
-
+      document.querySelector("h2"); // selecting the tags
+      document.querySelector(".heading"); // selecting the class
+      document.querySelector("#title"); // selecting the id
+      document.querySelector('input[type="password"]');
+      document.querySelector("li").style.backgroundColor = "orange"; // to make li bg color as green
+      const list = document.querySelectorAll("li"); // selecting all the list tags
+      list[0].style.color = "green"; // picking up the first (0th) index li tag and making color as green
+      list.forEach((li) => { // iterating over the list array and making all bg color of li as green
+        li.style.backgroundColor = "green";
+      });
     </script>
   </body>
 </html>
-
-
 
 <!-- 
 Q.1 Difference between innerText and textContent: 
