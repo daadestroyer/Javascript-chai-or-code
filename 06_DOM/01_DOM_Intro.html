@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="title" class="heading">DOM Learning on Chai aur Code <span style="display: none;"> text text</span></h1>
+      <h2>Lorem 4</h2>
+      <h2>Lorem 5</h2>
+      <h3>Lorem 5</h3>
+
+      <p>Lorem ipsum, dolor sit amet</p>
+    </div>
+
+    <script>
+      document.getElementById("title").style.backgroundColor = "green";
+      document.getElementById("title").style.padding = "20px";
+      document.getElementById("title").style.borderRadius = "10px";
+      document.getElementById("title").style.color = "blue";
+      console.log(document.getElementById("title").textContent);
+      document.querySelector('h2')
+
+    </script>
+  </body>
+</html>
+
+
+
+<!-- 
+Q.1 Difference between innerText and textContent: 
+Ans: innerText: will only show what is visible on the page. 
+     textContent: will show all the texts even if it's hidden due to any CSS property being applied to the text.
+     innerHtml: display html tag also 
+
+Q.2
+Ans:
+ -->
