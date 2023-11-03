@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | TheCoders TV</title>
+    <style>
+      body {
+        background-color: rgb(62, 62, 62);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        const parent = document.querySelector('.parent')
+        console.log(parent.children[0].innerHTML);
+
+        for(let i=0 ; i<parent.children.length ; i++){
+                console.log(parent.children[i].innerHTML);
+        }
+        parent.children[0].style.color = 'red' // targetting first element of all child
+        parent.firstElementChild.style.fontSize = '30px' // targetting first element of all child
+        parent.lastElementChild.style.color = 'green'
+    </script>   
+  </body>
+</html>
