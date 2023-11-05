@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchrnous in Javascript</title>
+</head>
+<body>
+        <h1>Chai aur Code</h1>
+        <button id="stop">Stop</button>
+
+        <script>
+            const sayShubham = ()=>{
+                console.log('Hey Shubham !');
+            }
+
+            const changeText = ()=>{
+                document.querySelector("h1").innerHTML = "TheCoders TV";
+                console.log('CHANGED');
+            }
+             
+            // after 2 second sayShubham function will call
+           const setTimeOutRef =  setTimeout(changeText,2000)
+           
+           document.querySelector("#stop").addEventListener('click',()=>{
+                clearTimeout(setTimeOutRef)
+                console.log('STOPPED');
+           })
+        </script>
+</body>
+</html>

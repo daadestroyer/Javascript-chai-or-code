@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchrnous in Javascript</title>
+    <style>
+      #color-div {
+        border: 2px solid black;
+        height: 200px;
+        width: 300px;
+        margin-bottom: 20px;
+      }
+      #color-div > h4 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chai Aur Code</h1>
+    <div id="color-div">
+      <h4>Color Changer</h4>
+    </div>
+    <button id="changecolor">Change Background Color</button>
+    <!-- <button id="start">Start</button> -->
+    <button id="stopcolorchange">Stop Color Change</button>
+
+    <script>
+      let setIntervalRef = null;
+
+      const startChangingColor = () => {
+        console.log("start changing color");
+        const arr = [
+          "orange",
+          "green",
+          "red",
+          "yellow",
+          "pink",
+          "blue",
+          "purple",
+          "aqua",
+          "Fuchsia",
+          "Lime",
+        ];
+        const num = Math.floor(Math.random() * 10);
+        document.getElementById("color-div").style.backgroundColor = arr[num];
+      };
+
+      document.querySelector("#changecolor").addEventListener("click", () => {
+        setIntervalRef = setInterval(startChangingColor, 1000);
+      });
+
+      document
+        .querySelector("#stopcolorchange")
+        .addEventListener("click", () => {
+          clearTimeout(setIntervalRef);
+          document.getElementById("color-div").style.backgroundColor = "white";
+          console.log("STOPPED");
+        });
+
+      // const num = Math.floor(Math.random() * 3);
+      // console.log(num);
+      // if (num == 0) {
+      //   document.body.style.backgroundColor = "blue";
+      // } else if (num == 1) {
+      //   document.body.style.backgroundColor = "red";
+      // } else {
+      //   document.body.style.backgroundColor = "green";
+      // }
+    </script>
+  </body>
+</html>

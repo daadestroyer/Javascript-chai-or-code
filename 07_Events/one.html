@@ -70,14 +70,14 @@
     // where first outer event will execute and then inside event will execute 
     
     // ***********************************HOW TO STOP EVENT BUBBLING*******************************
-    document.getElementById('images').addEventListener('click',(e)=>{
-        console.log('clicked inside the UL');
-    },false)
+    // document.getElementById('images').addEventListener('click',(e)=>{
+    //     console.log('clicked inside the UL');
+    // },false)
 
-    document.getElementById('owl').addEventListener('click',(e)=>{
-        console.log('owl clicked');
-        e.stopPropagation()
-    },false)
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //     console.log('owl clicked');
+    //     e.stopPropagation()
+    // },false)
 
     // now event bubbling will not happen because we clicked owl and then UL need to be executed
     // but after clicking on owl we stop event there only and didn't allowed it to propogate
@@ -91,10 +91,10 @@
     // },false)
 
     // ***********************************HIDE ALL IMAGES ON CLICK*******************************
-    document.querySelector('#images').addEventListener('click',(e)=>{
-        console.log(e.target.parentNode);
-        let removeIt = e.target.parentNode
-        removeIt.remove()
-    },false)
+    // document.querySelector('#images').addEventListener('click',(e)=>{
+    //     console.log(e.target.parentNode);
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()
+    // },false)
 </script>
 </html>

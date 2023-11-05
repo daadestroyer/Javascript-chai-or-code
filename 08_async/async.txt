@@ -1,0 +1,14 @@
+>>> javascript is by default synchronous means, a single threaded application
+
+
+synchronous/blocking code
+-------------------------
+synchronous means an application which has single thread and things are getting executed one by one. We can also say that it's a 
+blocking code meaning if one code is getting executed then at that same time other code is not able to get execut
+
+asynchronous/non-blocking code
+------------------------------
+asynchronous means an application which as multiple threads and multiple things are getting executed parallely. We can also say that
+it's non-blocking code meaning if one code is getting executed at that same time other code can also be able to execute . that's
+getting possible with the help of different threads
+
