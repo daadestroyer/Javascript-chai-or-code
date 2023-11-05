@@ -10,3 +10,4 @@ Promise
 
 >>> promise always take one function and that function takes two parameters which are resolve or reject. if promise if fulfull means
     promise if fulfull if not means promise is reject
+    
