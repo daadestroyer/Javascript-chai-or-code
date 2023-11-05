@@ -1,0 +1,12 @@
+Promise
+--------
+>>> the promise object represent the eventual completion (or failure) of an asynchronous operation and its resulting value, meaning 
+    hamne kisi function se promise lekar rakkha hai ko wo function apna poora kam karke hame result lake dega, lekin wo function turant
+    result lake nahi dega bas usne promise kia hua hai ki wo result lake dega after some time not immediatly 
+
+>>> promise hamesha future me jake complete hota hai (may be in some seconds/minutes/hours)
+
+
+
+>>> promise always take one function and that function takes two parameters which are resolve or reject. if promise if fulfull means
+    promise if fulfull if not means promise is reject
